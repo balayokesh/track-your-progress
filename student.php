@@ -15,7 +15,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/0d1cdb6f90.js"></script>
 </head>
-<body>
+<body style="user-select: none">
 	
 	<header class="jumbotron jumbotron-fluid">
 		<h1 class="col-8 text-center">
@@ -28,17 +28,12 @@
 	</header>
 
 	<main class="container">
-		<h1>
-		<?php 
-			echo $_SESSION['student-user'];
-		?>
-		</h1>
 
 		<!-- Show all assignments -->
 		<details>
 			<summary>Show Assignments list:</summary>
 			<p>Assignments list:</p>
-			<table>
+			<table class="table table-striped table-bordered table-responsive ">
 				<tr>
 					<th>Assignment ID</th>
 					<th>Faculty name</th>

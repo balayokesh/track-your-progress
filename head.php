@@ -15,7 +15,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/0d1cdb6f90.js"></script>
 </head>
-<body>
+<body style="user-select: none;">
 	
 	<header class="jumbotron jumbotron-fluid">
 		<h1 class="col-8 text-center">
@@ -46,7 +46,7 @@
 			<details>
 				<summary>Show Faculties list:</summary>
 				<p>Faculty list:</p>
-				<table>
+				<table class="table table-striped table-bordered">
 					<tr>
 						<th>Faculty No.</th>
 						<th>Name</th>
@@ -91,7 +91,7 @@
 			<details>
 				<summary>Show Students list:</summary>
 				<p>Students list:</p>
-				<table>
+				<table class="table table-striped table-bordered">
 					<tr>
 						<th>Student ID</th>
 						<th>Name</th>

@@ -15,7 +15,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/0d1cdb6f90.js"></script>
 </head>
-<body>
+<body style="user-select: none">
 	
 	<header class="jumbotron jumbotron-fluid">
 		<h1 class="col-8 text-center">
@@ -27,23 +27,27 @@
 		</h1>
 	</header>
 
-	<main>
-		<p>Post an assignment:</p>
-		<form action="php-assets/post-assignment.php" method="post">
-			<label>What is the assignment?</label>
-			<input type="text" name="assignment">
-			<br>
-			<label>Please select a deadline: </label>
-			<input type="datetime-local" name="deadline">
-			<br>
-			<input type="submit" value="Post Assignment" class="btn btn-primary">
-		</form>
-
+	<main class="m-3 p-3">
+		<details open class="p-3">
+			<summary>Post an assignment:</summary>
+			<form action="php-assets/post-assignment.php" method="post">
+				<br>
+				<label>What is the assignment?</label>
+				<input type="text" name="assignment">
+				<br>
+				<label>Please select a deadline: </label>
+				<input type="datetime-local" name="deadline">
+				<br>
+				<input type="submit" value="Post Assignment" class="btn btn-primary">
+			</form>
+		</details>
+		<hr>
 		<!-- Show all assignments -->
-		<details>
+		<details open class="p-3">
 			<summary>Show Assignments list:</summary>
+			<br>
 			<p>Assignments list:</p>
-			<table>
+			<table class="table table-striped table-bordered">
 				<tr>
 					<th>Assignment ID</th>
 					<th>Faculty name</th>
@@ -75,7 +79,7 @@
 		</details>
 	</main>
 
-	<footer> 
+	<footer class="fixed-bottom">  
 		<div class="bg-dark text-white text-center">
 			Made with ❤ by team Tech_army
 		</div>
