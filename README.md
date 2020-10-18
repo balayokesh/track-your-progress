@@ -1,6 +1,6 @@
 # Track your progress
 
-See the video at: [youtube](https://youtu.be/nlK0HnS-3jw) 
+See the video at: [youtube](https://youtu.be/CX-rxeunQMI) 
 
 See the presentation at: [Google presentation](https://docs.google.com/presentation/d/1fO-UG8soYwU_yUKuIpMCySQj5iC-unKv8XZVAmigUgs/edit?usp=sharing)
 
