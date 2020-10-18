@@ -15,7 +15,7 @@ else{
 		header("location:../student.php");		
 	}
 	else{
-		mysqli_query($con, "INSERT INTO tasks (completed) VALUES ('$student') WHERE id='$id'");
+		mysqli_query($con, "UPDATE tasks SET completed=concat(completed, '$student') WHERE id='$id'");
 		$_SESSION['msg'] = "Assignment completed successfully";
 		header("location:../student.php");
 	}
