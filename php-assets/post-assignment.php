@@ -9,7 +9,7 @@ $assignment = $_POST['assignment'];
 $deadline = $_POST['deadline'];
 
 $sqlcheck = "SELECT * FROM tasks WHERE facultyname = '$facultyname'";
-$sqlinsert = "INSERT INTO tasks(facultyname, assignment, deadline) VALUES ('$facultyname', '$assignment', '$deadline')";
+$sqlinsert = "INSERT INTO tasks(facultyname, assignment, deadline, completed) VALUES ('$facultyname', '$assignment', '$deadline', '-')";
 
 // if (mysqli_num_rows(mysqli_query($con, $sqlcheck)) > 0 ){
 // 	$_SESSION['msg'] = "Username already taken";
